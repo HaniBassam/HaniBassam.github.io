@@ -1,9 +1,4 @@
 {
-  
-"scripts": {
-    "build:css": "postcss src/style.css -o dist/style.css"
-},
-
   "skills": [
     {
       "id": "1",
