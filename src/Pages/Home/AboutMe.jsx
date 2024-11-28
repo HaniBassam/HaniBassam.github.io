@@ -25,20 +25,20 @@ export default function AboutMe() {
           </p>
           <div className="about-me-random">
             <h1 className="about-me-random---heading">Random Facts</h1>
-            <span className="random"></span> I drink way too many
-            energy drinks—they’re basically my fuel for creativity. 
-             I’m into all kinds of design, from sleek UI layouts to bold,
-            out-of-the-box ideas. Watching TV is my ultimate chill zone;
-            nothing beats a good series marathon to unwind .  I absolutely
-            love cooking (and eating, of course 🍔), especially when it involves
-            experimenting with spicy flavors 🌶️. <br /> I’m a bit of a neat freak 🧹
-            because a clean space equals a clear mind . My goal is to live
-            life with zero regrets. I’m slightly addicted to the social media
-            X and always enjoy diving into a good meme thread 😂. <br />
-            Yoda might be my mentor, caffeine is definitely my co-pilot.
-            Even my MacBook 💻 feels like a creative sidekick, always ready to
-            bring ideas to life 💡. And secretly, I think I could nail stand-up
-            comedy 🎤, though my jokes might say otherwise !”**
+            <span className="random"></span> I drink way too many energy
+            drinks—they’re basically my fuel for creativity. I’m into all kinds
+            of design, from sleek UI layouts to bold, out-of-the-box ideas.
+            Watching TV is my ultimate chill zone; nothing beats a good series
+            marathon to unwind . I absolutely love cooking (and eating, of
+            course 🍔), especially when it involves experimenting with spicy
+            flavors 🌶️. <br /> I’m a bit of a neat freak 🧹 because a clean
+            space equals a clear mind . My goal is to live life with zero
+            regrets. I’m slightly addicted to the social media X and always
+            enjoy diving into a good meme thread 😂. <br />
+            Yoda might be my mentor, caffeine is definitely my co-pilot. Even my
+            MacBook 💻 feels like a creative sidekick, always ready to bring
+            ideas to life 💡. And secretly, I think I could nail stand-up comedy
+            🎤, though my jokes might say otherwise !”**
           </div>
         </div>
       </div>
