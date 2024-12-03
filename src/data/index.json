@@ -25,9 +25,10 @@
     {
       "id": "1",
       "src": "./img/placeholder-image.png",
-      "title": "preject",
+      "title": "Steno Museet",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View On Website"
+      "link": "View On Website",
+      "linkUrl": "http://stenno-museet.hani-bassam.dk"
     },
 
     {
@@ -35,14 +36,16 @@
       "src": "./img/placeholder-image-1.png",
       "title": "App Dashboard",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View On Website"
+      "link": "View On Website",
+      "linkUrl": ""
     },
     {
       "id": "3",
       "src": "./img/placeholder-image-2.png",
       "title": "Easy Rentn",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View On Website"
+      "link": "View On Website",
+      "linkUrl": ""
     }
   ],
   "testimonial": [
