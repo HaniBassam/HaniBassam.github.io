@@ -26,7 +26,7 @@
       "id": "1",
       "src": "./img/placeholder-image.png",
       "title": "Steno Museet",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "description": "A digital platform dedicated to exploring and learning about the Steno Museum. The project involved experimenting with Spline design and utilizing Webflow for development..",
       "link": "View On Website",
       "linkUrl": "http://stenno-museet.hani-bassam.dk"
     },
@@ -34,18 +34,18 @@
     {
       "id": "2",
       "src": "./img/placeholder-image-1.png",
-      "title": "App Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "title": "Online Magazine",
+      "description": "An online magazine designed to inform and showcase various style forms.",
       "link": "View On Website",
-      "linkUrl": ""
+      "linkUrl": "http://online-magazine.hani-bassam.dk"
     },
     {
       "id": "3",
       "src": "./img/placeholder-image-2.png",
-      "title": "Easy Rentn",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "title": "Project Menace",
+      "description": "A website prototype I designed for a friend developing a clothing brand that has yet to be publicly launched. The project serves as a draft concept showcasing how the brand’s online presence could look.",
       "link": "View On Website",
-      "linkUrl": ""
+      "linkUrl": "http://project-menace.hani-bassam.dk"
     }
   ],
   "testimonial": [

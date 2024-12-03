@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: "Roboto", sans-serif;
   -moz-osx-font-smoothing: "Roboto", sans-serif;
   font-style: normal;
+
 }
 h1,
 h2,
@@ -211,16 +212,7 @@ h2 {
   background-color: var(--bg-shade);
 }
 
-.hero--section--content-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-}
-
 .hero--section--content {
-  display: fl ;
   position: absolute;
 }
 
@@ -244,43 +236,59 @@ h2 {
   font-size: 18px;
   line-height: 1.5;
 }
-.skills-section--heading{
-  color: #ffffff;
-}
 
-.skills-section--heading {
-  color: #000000;
-  font-size: 48px;
-  font-weight: 700;
-  padding: 10px 20px;
-  position: absolute;
-  top: -58%; /* Placerer teksten øverst i billedet */
-  left: -129%; /* Placerer teksten til venstre */
-}
-
-.hero--section-description {
-  color: black; /* Gør teksten tydelig på en lys baggrund */
-  font-size: 1em;
-  font-weight: 700;
-  line-height: 1.8;
-  width: 380px; /* Begrænser bredden for bedre læsbarhed */
-  padding: 10px 20px; /* Giver luft omkring teksten */
-  position: relative; /* Bevarer fleksibilitet i positionering */
-  top: -210px; /* Justér dette for at få en bedre placering */
-  left: -179%;
-  transform: translateX(50%); /* Justerer teksten yderligere til midten */
-}
-
+.about--section--box,
 .about-me-random {
   color: #ffffff;
   font-size: 1em;
-  text-align: left; /* Venstrestiller teksten */
+  text-align: left;
   position: absolute;
-  top: -58%; /* Placerer teksten tæt på toppen af billedet */
-  left: 25%; /* Placerer teksten i venstre side */
-  width: 380px; /* Begrænser bredden for bedre læsbarhed */
-  line-height: 1.8; /* Giver lidt mere plads mellem linjerne */
-  padding: 10px; /* Tilføjer lidt luft omkring teksten */
+  width: 380px;
+  line-height: 1.8;
+  padding: 10px;
+}
+
+/* Specifik placering for større skærme */
+.about--section--box {
+  top: 35%;
+  left: 23%;
+}
+
+.about-me-random {
+  top: 2%;
+  left: 150%;
+}
+
+/* Responsiv styling for mindre skærme */
+@media screen and (max-width: 1024px) {
+  .about--section--box {
+    top: 10%;
+    left: 10%;
+    width: 80%; /* Udvider bredden til 80% af skærmen */
+  }
+
+  .about-me-random {
+    top: 35%;
+    left: 10%;
+    width: 80%; /* Udvider bredden til 80% af skærmen */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about--section--box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%; /* Fylder hele bredden */
+    margin-bottom: 20px;
+  }
+
+  .about-me-random {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%; /* Fylder hele bredden */
+  }
 }
 
 .hero--section--img {
@@ -376,8 +384,8 @@ h2 {
 
 .about--section--img {
   position: absolute;
-  width: 70%;
-  height: 90%;
+  width: 69%;
+  height: 69%;
   z-index: -1; /* Gør billedet til baggrund ved at sende det bag teksten */
 }
 
