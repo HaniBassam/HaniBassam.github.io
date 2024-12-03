@@ -19,6 +19,13 @@ h6,
 p {
   margin: 0;
 }
+
+:root {
+  --font-small: clamp(14px, 2vw, 16px); /* Dynamisk skalering */
+  --font-medium: clamp(16px, 2.5vw, 18px);
+  --font-large: clamp(24px, 4vw, 32px);
+}
+
 :root {
   --primary: #5e3bee;
   --heading-color: #282938;
@@ -251,7 +258,7 @@ h2 {
 /* Specifik placering for større skærme */
 .about--section--box {
   top: 35%;
-  left: 23%;
+  left: 15%;
 }
 
 .about-me-random {
@@ -281,6 +288,27 @@ h2 {
     left: 0;
     width: 100%; /* Fylder hele bredden */
     margin-bottom: 20px;
+  }
+
+.about--section {
+    padding: 20px 20px; /* Indvendig afstand */
+    margin: 20px auto; /* Centrer og giv plads over/under */
+    width: 70%; /* Gør sektionen bredere for små skærme */
+    height: auto; /* Sørg for dynamisk højde */
+    display: flex; /* Brug flexbox */
+    flex-direction: column; /* Stabler indhold vertikalt */
+    justify-content: center; /* Centrerer indholdet */
+    align-items: center; /* Centrerer horisontalt */
+}
+
+  .about-me-heading {
+    position: flex;
+    font-size: 1.9rem;
+  }
+
+  .about-me-random---heading {
+    position: flex;
+    font-size: 1.9rem;
   }
 
   .about-me-random {
@@ -375,20 +403,24 @@ h2 {
 /* About Us */
 .about--section {
   display: flex;
-  justify-content: center; /* Centrerer indholdet horisontalt */
-  align-items: center; /* Centrerer indholdet vertikalt */
-  padding: 433.3px 85.3px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Brug pixelbaseret padding */
   position: relative;
   overflow: hidden;
+  height: 600px; /* Fast højde til sektionen */
+  width: 75%;
+  margin: 0 auto;
 }
 
 .about--section--img {
   position: absolute;
-  width: 69%;
-  height: 69%;
-  z-index: -1; /* Gør billedet til baggrund ved at sende det bag teksten */
+  top: 0; /* Placer billedet øverst */
+  left: 0; /* Placer billedet til venstre */
+  width: 100%; /* Gør billedet så bredt som containeren */
+  height: 100%; /* Gør billedet så højt som containeren */
+  z-index: -1; /* Sørger for, at billedet forbliver bag teksten */
 }
-
 @keyframes blinkEffect {
   0% {
     opacity: 1;
@@ -404,11 +436,25 @@ h2 {
   }
 }
 
+
 .about--section--img img {
+  width: 100%; /* Sørger for, at billedet fylder containerens bredde */
+  height: auto; /* Bevarer billedets proportioner */
+  clip-path: polygon(
+    0 10%,
+    15% 0,
+    90% 0,
+    100% 15%,
+    100% 90%,
+    90% 100%,
+    15% 100%,
+    0 90%
+  ); /* Beholder polygonformen */
   animation: blinkEffect 8s infinite;
   transition: transform 0.3s ease-in-out;
-  border-radius: 10%;
+  border-radius: 10%; /* Bløde hjørner */
 }
+
 
 .about--section--img img {
   width: 100%;
@@ -812,6 +858,7 @@ input[type="checkbox"] {
     padding-bottom: 70px;
   }
   .about--section {
+    display: flex;
     gap: 20px;
     padding-top: 0;
     padding-bottom: 0;
@@ -934,3 +981,18 @@ input[type="checkbox"] {
 }
 
 /* Responsive Screens Ends*/
+
+@media screen and (max-width: 768px) {
+  .about--section--img img {
+    width: 100%; /* Sørger for, at billedet fylder hele bredden */
+    height: 100; /* Bevarer billedets proportioner */
+  }
+
+  .about--section--box {
+    font-size: 0.9rem; /* Reducerer kun tekstens størrelse */
+  }
+
+
+}
+
+
