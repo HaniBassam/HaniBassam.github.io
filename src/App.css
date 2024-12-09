@@ -213,7 +213,7 @@ h2 {
   justify-content: center;
   position: relative;
   gap: 5%;
-  padding: 50px 15.333px;
+  padding: 165px 15.333px;
   background-color: var(--bg-shade);
 }
 
@@ -320,9 +320,15 @@ h2 {
   display: flex;
 }
 .hero--section--img > img {
+  display: flex;
+  position: inherit;
+  justify-content: right;
+  align-items: flex-end;
   max-width: 100%;
-  height: 100%;
-  border-radius: 10%;
+  
+
+width: 41%;
+
 }
 /* Hero Section Style Ends */
 
