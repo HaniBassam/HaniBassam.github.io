@@ -14,6 +14,8 @@ export default function AboutMe() {
         graphic design adds a unique touch to my work. I’m detail-oriented,
         adaptable, and always eager to grow.
 
+        
+
         <div className="about-me-random">
           <h1 className="about-me-random---heading">Random Facts</h1>
           <span className="random"></span> I fuel my creativity with energy
